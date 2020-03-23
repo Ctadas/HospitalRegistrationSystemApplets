@@ -1,0 +1,33 @@
+<wux-toast id="wux-toast" />
+<block wx:if="{{payment_list.length >0}}">
+<wux-wing-blank size="default" wx:for="{{payment_list}}" wx:key="{{item}}">
+    <wux-white-space size="default" />
+    <i-card title="{{item.visit_card_obj.real_name}}" extra="{{submission_time}}" bindtap="pay_success">
+        <view slot="content">
+           <wux-row>
+                <wux-col span="12" wx:for="{{item.payment_item}}" wx:key="{{item}}">
+                    <text class='card_info'>{{item.name}}：</text>
+                    <text class='card_data'>{{item.price}}元</text>
+                </wux-col>
+            </wux-row>
+        </view>
+        <view slot="footer">总金额：{{item.total}}元</view>
+    </i-card>
+    <!-- <wux-card title="{{item.visit_card_obj.real_name}}" extra="{{submission_time}}">
+        <view slot="body">
+            <wux-row>
+                <wux-col span="12" wx:for="{{item.payment_item}}" wx:key="{{item}}">
+                    <text class='card_info'>{{item.name}}：</text>
+                    <text class='card_data'>{{item.price}}元</text>
+                </wux-col>
+            </wux-row>
+        </view>
+        <view class="" slot="footer">总金额：{{item.total}}元</view>
+    </wux-card> -->
+</wux-wing-blank>
+</block>
+<block wx:else>
+    <wux-row wux-class="tip_text">
+        <text>暂无缴费项目</text>
+    </wux-row>
+</block>

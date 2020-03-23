@@ -1,0 +1,49 @@
+{
+    "pages": [
+        "pages/index/index",
+        "pages/number/number",
+        "pages/userson/userson",
+        "pages/userchild/userchild",
+        "pages/money/money",
+        "pages/report/report",
+        "pages/new/new",
+        "pages/card/card",
+        "pages/doctor/doctor",
+        "pages/past/past",
+        "pages/logs/logs",
+        "pages/login/login",
+        "pages/registered_record/registered_record",
+        "pages/registered_record_info/registered_record_info",
+        "pages/report_info/report_info",
+        "pages/money_info/money_info"
+    ],
+    "window": {
+        "backgroundTextStyle": "light",
+        "navigationBarBackgroundColor": "#fff",
+        "navigationBarTitleText": "曙光医院",
+        "navigationBarTextStyle": "black"
+    },
+    "tabBar": {
+        "list": [
+            {
+                "pagePath": "pages/index/index",
+                "text": "首页",
+                "iconPath": "/images/首页.png",
+                "selectedIconPath": "/images/首页1.png"
+            },
+            {
+                "pagePath": "pages/number/number",
+                "text": "挂号",
+                "iconPath": "/images/挂号.png",
+                "selectedIconPath": "/images/挂号1.png"
+            },
+            {
+                "pagePath": "pages/userson/userson",
+                "text": "用户",
+                "iconPath": "/images/用户.png",
+                "selectedIconPath": "/images/用户2.png"
+            }
+        ],
+        "selectedColor": "#f5ac42"
+    }
+}

@@ -1,0 +1,31 @@
+<!--pages/userchild/userschild.wxml-->
+<wux-toast id="wux-toast" />
+<view class='page'>
+    <!-- <view class='bar'>
+        <wux-barcode wux-class="barcode" number="{{ number }}" options="{{ options }}" width="250" height="100" />
+    </view> -->
+    <!-- <view class='headimg'>
+        <image src='/images/01.jpg'></image>
+    </view> -->
+    <view class='message'>
+        <wux-cell title="姓名" extra="{{real_name}}"></wux-cell>
+        <wux-cell title="手机号码" extra="{{telphone}}"></wux-cell>
+        <wux-cell wx:if="{{id_type == '1'}}" extra="{{id_card}}" title="身份证"></wux-cell>
+        <wux-cell wx:if="{{id_type == '2'}}" extra="{{id_card}}" title="港澳居民身份证"></wux-cell>
+        <wux-cell wx:if="{{id_type == '3'}}" extra="{{id_card}}" title="台湾居民身份证"></wux-cell>
+        <wux-cell wx:if="{{id_type == '4'}}" extra="{{id_card}}" title="军官证"></wux-cell>
+    </view>
+    
+    <view class='button'>
+        <wux-button block wux-class="remove_button" bindtap="remove_vicitcard" type="assertive">移除就诊卡</wux-button>
+    </view>
+
+
+
+
+
+
+
+
+
+</view>

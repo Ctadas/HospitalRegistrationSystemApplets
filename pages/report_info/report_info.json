@@ -1,0 +1,12 @@
+{
+    "usingComponents": {
+        "wux-row": "/wudist/row/index",
+        "wux-col": "/wudist/col/index",
+        "wux-wing-blank": "/wudist/wing-blank/index",
+        "wux-white-space": "/wudist/white-space/index",
+        "wux-toast": "/wudist/toast/index",
+        "wux-radio-group": "/wudist/radio-group/index",
+        "wux-radio": "/wudist/radio/index",
+        "wux-card": "/wudist/card/index"
+    }
+}

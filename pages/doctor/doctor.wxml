@@ -1,0 +1,23 @@
+<!--pages/doctor/doctor.wxml-->
+<wux-calendar id="wux-calendar" />
+<view class='content'>
+    <view class='main'>
+        <view class='step'>
+            <wux-steps>
+                <wux-step status="process" title="选科"></wux-step>
+                <wux-step status="process" title="预约"></wux-step>
+                <wux-step status="wait" title="完成"></wux-step>
+            </wux-steps>
+        </view>
+
+        <view class='panel'>
+            <i-panel title="外科">
+                <view style="padding: 15px;">
+                    <wux-cell-group>
+                        <wux-cell title="张国威" extra="{{ value1 }}" bind:click="openCalendar1" isLink thumb="/images/医生.png"></wux-cell>
+                    </wux-cell-group>
+                </view>
+            </i-panel>
+        </view>
+    </view>
+</view>

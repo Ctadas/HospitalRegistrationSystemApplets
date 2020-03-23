@@ -1,0 +1,74 @@
+<!--pages/userson/userson.wxml-->
+<view class='page'>
+    <view class='userinfo'>
+        <wux-row wux-class='userinfo_row'>
+            <wux-col span="12">
+                <image class='avatar_img' src='{{avatarUrl}}'></image>
+            </wux-col>
+            <wux-col span="12">
+                <text>{{nickName}}</text>
+            </wux-col>
+        </wux-row>
+    </view>
+    <view class='background'>
+        <wux-row wux-class='background'>
+            <wux-col span="12">
+                <image class='background_img' src='/images/02.jpg'></image>
+            </wux-col>
+        </wux-row>
+    </view>
+    <view class='card_message'>
+        <wux-row wux-class='card_info_list'>
+            <text>就诊卡信息</text>
+        </wux-row>
+        <navigator wx:for="{{visit_card_list}}" url="/pages/userchild/userchild?id={{item.id}}" wx:key="{{item.id}}">
+            <i-card title="{{item.real_name}}" thumb="/images/001.png">
+                <view slot="content">
+                    <wux-row>
+                        <text wx:if="{{item.id_type=='1'}}">身份证：</text>
+                        <text wx:if="{{item.id_type=='2'}}">港澳居民身份证：</text>
+                        <text wx:if="{{item.id_type=='3'}}">台湾居民身份证：</text>
+                        <text wx:if="{{item.id_type=='4'}}">军官证：</text>
+                        <text class="card_data">{{item.id_card}}</text>
+                    </wux-row>
+                    <wux-row>
+                        <text>手机号码:</text>
+                        <text class="card_data">{{item.telphone}}</text>
+                    </wux-row>
+                </view>
+                <view slot="footer">曙光医院</view>
+            </i-card>
+            <wux-white-space size="default" />
+            <wux-white-space size="large" />
+        </navigator>
+        <!-- <navigator wx:for="{{visit_card_list}}" url="/pages/userchild/userchild?id={{item.id}}" wx:key="{{item.id}}">
+            <wux-row wux-class='card'>
+                <wux-col wux-class='card_line' span="12">
+                    <text class='card_info'>姓名</text>
+                    <text class='card_data'>{{item.real_name}}</text>
+                </wux-col>
+                <wux-col wux-class='card_line' span="12">
+                    <text class='card_info' wx:if="{{item.id_type == '1'}}">身份证</text>
+                    <text class='card_info' wx:if="{{item.id_type == '2'}}">港澳居民身份证</text>
+                    <text class='card_info' wx:if="{{item.id_type == '3'}}">台湾居民身份证</text>
+                    <text class='card_info' wx:if="{{item.id_type == '4'}}">军官证</text>
+                    <text class='card_data'>{{item.id_card}}</text>
+                </wux-col>
+                <wux-col wux-class='card_line' span="12">
+                    <text class='card_info'>手机号码</text>
+                    <text class='card_data'>{{item.telphone}}</text>
+                </wux-col>
+
+                <image class='card_img' src='/images/挂号.png'></image>
+            </wux-row>
+        </navigator> -->
+    </view>
+    <view class='button_group'>
+        <wux-row>
+            <wux-col offset="1" span="10">
+                <wux-button block type="assertive" bind:click="topast">添加就诊卡</wux-button>
+            </wux-col>
+        </wux-row>
+        <!-- <wux-button block outline type="assertive" bind:click="touserchild">登录</wux-button> -->
+    </view>
+</view>

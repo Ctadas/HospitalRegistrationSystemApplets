@@ -1,0 +1,25 @@
+/* pages/userchild/userschild.wxss */
+.page{
+  width: 100%;
+  
+}
+.bar{
+  width: 90%;
+  margin: 0 auto;
+  margin-left: 130rpx;
+  margin-top: 50rpx;
+}
+.message{
+  width: 96%;
+  margin: 0 auto;
+  margin-top: 100rpx;
+}
+.button{
+    width: 75%;
+    margin: 0 auto;
+    margin-top: 240rpx;
+
+}
+.remove_button{
+    background-color:red!important
+}

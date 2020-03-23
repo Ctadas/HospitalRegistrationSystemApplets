@@ -1,0 +1,33 @@
+<!--pages/past/past.wxml-->
+<wux-toast id="wux-toast" />
+<form bindsubmit="formSubmit">
+
+    <view class='message'>
+        <wux-cell-group title="个人信息">
+
+            <wux-cell hover-class="none">
+                <wux-input label="姓名" name="real_name" placeholder="请输入姓名" type='text' bind:confirm="check_name" />
+            </wux-cell>
+            <wux-cell hover-class="none">
+                <wux-input label="手机" name="telphone" controlled  placeholder="请输入手机号码" type='number' maxlength="11" bind:change="tel_change" error="{{ tel_error }}" bind:error="tel_error"/> 
+            </wux-cell>
+        </wux-cell-group>
+        <wux-cell-group title="证件信息">
+            <wux-select id="wux-select1" />
+            <wux-cell title="证件类型" extra="{{ id_type_show }}"></wux-cell>
+            <input name='id_type' value='{{id_type}}' hidden='true' />
+            <!-- <wux-radio title="大陆二代居民身份证" value="1" />
+            <wux-radio title="港澳居民身份证" value="2" />
+            <wux-radio title="台湾居民身份证" value="3" />
+            <wux-radio title="军官证" value="4" /> -->
+
+            <wux-cell hover-class="none">
+                <wux-input label="证件号" name="id_card" placeholder="请输入身份证号码" type='idcard ' maxlength="18" adjust-position='true' />
+            </wux-cell>
+        </wux-cell-group>
+
+    </view>
+    <view class='button'>
+        <button class="submit_btn" form-type="submit">完成</button>
+    </view>
+</form>

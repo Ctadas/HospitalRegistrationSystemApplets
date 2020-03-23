@@ -1,0 +1,57 @@
+/* pages/registered_record/registered_record.wxss */
+
+.title {
+    font-size: 36rpx;
+    line-height: 1;
+    color: #f5ac42;
+    padding: 20px 16px 10px;
+}
+
+.card {
+    padding: 10px;
+    margin: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5%;
+    background-color: rgba(224, 228, 226, 0.349);
+    position: relative;
+}
+
+.card_line {
+    padding: 5px;
+}
+
+.card_info {
+    color: #ad884f7e;
+}
+
+.card_data {
+    color: black;
+    float: right;
+}
+
+.card_img {
+    width: 90px;
+    height: 90px;
+    opacity: 0.3;
+    position: absolute;
+    right: 10px;
+}
+
+.complete_card {
+    padding: 10px;
+    margin: 10px;
+    border-radius: 5%;
+    border: 1px solid #ccc;
+    background-color: rgba(224, 228, 226, 0.349);
+}
+
+.card_btn {
+    margin: 10px 0;
+    border-color: transparent;
+    background-color: #33cd5f;
+    color: #fff;
+}
+.btn_group {
+    margin: 0 10px;
+}
+

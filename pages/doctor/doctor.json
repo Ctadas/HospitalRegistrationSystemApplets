@@ -1,0 +1,11 @@
+{
+  "navigationBarTitleText": "预约挂号",
+  "usingComponents": {
+    "wux-steps": "/wudist/steps/index",
+    "wux-step": "/wudist/step/index",
+    "i-panel": "/dist/panel/index",
+    "wux-cell-group": "/wudist/cell-group/index",
+    "wux-cell": "/wudist/cell/index",
+    "wux-calendar": "/wudist/calendar/index"
+  }
+}

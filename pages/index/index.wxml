@@ -1,0 +1,49 @@
+<!--index.wxml-->
+<view class='Content'>
+    <view class='Header'>
+        <swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" circular="{{circular}}">
+            <block wx:for="{{imgUrls}}" wx:key="{{id}}">
+                <swiper-item>
+                    <image src="{{item}}" class="slide-image" />
+                </swiper-item>
+            </block>
+        </swiper>
+    </view>
+    <!--导航栏-->
+    <view class='nav'>
+        <view class='title lm_title'>
+            <text>栏目</text>
+        </view>
+        <view class='main'>
+            <navigator class='photo' url="/pages/card/card">
+                <image src='/images/卡.png'></image>
+                <view class='text'>建卡须知</view>
+            </navigator>
+
+            <navigator class='photo' url="/pages/registered_record/registered_record">
+                <image src='/images/预约.png '></image>
+                <view class='text '>挂号记录</view>
+            </navigator>
+
+            <navigator class='photo' url="/pages/money/money">
+                <image src='/images/钱袋.png '></image>
+                <view class='text '>门诊缴费</view>
+            </navigator>
+
+            <navigator class='photo' url="/pages/report/report">
+                <image src='/images/文档.png '></image>
+                <view class='text'>报告查询</view>
+            </navigator>
+        </view>
+    </view>
+
+    <!--内容-->
+    <view class='body '>
+        <navigator wx:for="{{news_list}}" class='card ' url="/pages/new/new?id={{item.id}}" wx:key="{{item.id}}">
+            <i-card i-class='hcard ' title="{{item.title}}" thumb="{{item.image}}">
+                <view slot="content">{{item.introduction}}</view>
+                <view slot="footer">来源：{{item.source}}</view>
+            </i-card>
+        </navigator>
+    </view>
+</view>

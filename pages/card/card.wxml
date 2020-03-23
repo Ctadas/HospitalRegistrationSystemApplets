@@ -1,0 +1,22 @@
+<!--pages/card/card.wxml-->
+
+<view class='content'>
+<view class='titimg'>
+   <image src='/images/04.jpg'></image>
+</view>
+<view class='text'>
+      <view class='title'>建卡须知
+         </view>
+      <view class='pop'>
+        <text>1、新建就诊卡,采用实名制,绑定身份证和手机号码。
+     2、绑定就诊卡后,可以使用微信预约挂号、当天挂号以及微信支付。
+     3、微信预约实行微信支付。微信预约已缴费者,无需到收费窗口排队取号。
+     4、就诊报道：请于预约时间前20分钟携带身份证、出示手机微信预约通知直接到候诊区分诊台报到。
+     5、微信预约可自助取消预约、自动退费。
+     6、微信挂号暂不支持退伍军人，残疾人、低保居民等减免政策。
+     </text>
+      </view>
+</view>
+
+
+</view>

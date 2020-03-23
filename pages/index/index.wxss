@@ -1,0 +1,101 @@
+.Content {
+    background-color: #fff;
+    margin: auto;
+    width: 100%;
+    height: 100%;
+}
+
+swiper, swiper image {
+    width: 100%;
+    height: 455rpx;
+    border-radius: 23rpx;
+}
+
+.Header {
+    width: 90%;
+    background-color: #fff;
+    margin: 10rpx auto;
+    border-radius: 23rpx;
+}
+
+.nav {
+    width: 100%;
+    height: 100%;
+    margin-top: 20rpx;
+}
+
+.title {
+    font-size: 36rpx;
+    color: #f5ac42;
+    margin-top: 20rpx;
+    font-family: 微软雅黑;
+}
+
+.lm_title {
+    padding: 5px 10px;
+}
+
+.main {
+    width: 95%;
+    height: 100%;
+    margin: 0 auto;
+    background-color: #fff;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-radius: 15rpx;
+    box-shadow: 5rpx 5rpx 5rpx #e9eaec;
+}
+
+.photo {
+    width: 23%;
+    height: 120rpx;
+    text-align: center;
+    margin-top: 28rpx;
+}
+
+.photo image {
+    width: 30%;
+    height: 45rpx;
+    background-color: #fff;
+    margin-top: 5rpx;
+}
+
+.text {
+    font-size: 28rpx;
+    color: #ababab;
+    font-family: 微软雅黑;
+}
+
+.body {
+    width: 100%;
+    margin-top: 20rpx;
+    margin-bottom: 20rpx;
+}
+
+.card {
+    margin-top: 25rpx;
+}
+
+.hcard {
+    background-color: #fff;
+    margin: 0 auto;
+}
+
+.button {
+    width: 20%;
+    margin: 0 auto;
+    margin-top: 30rpx;
+}
+
+.button image {
+    width: 33%;
+    height: 50rpx;
+    margin-left: 51rpx;
+    margin-top: 30rpx;
+}
+
+.tarbar {
+    width: 100%;
+    margin-top: 150rpx;
+}

@@ -1,0 +1,15 @@
+{
+    "usingComponents": {
+        "wux-row": "/wudist/row/index",
+        "wux-col": "/wudist/col/index",
+        "wux-card": "/wudist/card/index",
+        "wux-wing-blank": "/wudist/wing-blank/index",
+        "wux-white-space": "/wudist/white-space/index",
+        "wux-cell-group": "/wudist/cell-group/index",
+        "wux-cell": "/wudist/cell/index",
+        "wux-input": "/wudist/input/index",
+        "wux-icon": "/wudist/icon/index",
+        "wux-button": "/wudist/button/index",
+        "i-card": "/dist/card/index"
+    }
+}

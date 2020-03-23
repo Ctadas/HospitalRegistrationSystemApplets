@@ -1,0 +1,15 @@
+{
+    
+    "usingComponents": {
+      "wux-radio-group": "/wudist/radio-group/index",
+      "wux-radio": "/wudist/radio/index",
+      "wux-cell-group": "/wudist/cell-group/index",
+      "wux-cell": "/wudist/cell/index",
+      "wux-input": "/wudist/input/index",
+      "i-button": "/dist/button/index",
+      "wux-icon": "/wudist/icon/index",
+      "wux-button": "/wudist/button/index",
+      "wux-select": "/wudist/select/index",
+      "wux-toast": "/wudist/toast/index"
+    }
+}

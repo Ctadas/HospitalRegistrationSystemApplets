@@ -1,0 +1,36 @@
+<!--pages/registered_record/registered_record.wxml-->
+<wux-toast id="wux-toast" />
+<wux-wing-blank size="default">
+    <block wx:if="{{show_info == false}}">
+        <wux-row>
+            <text class='title'>请选择就诊卡</text>
+        </wux-row>
+        <navigator wx:for="{{visit_card_list}}" wx:key="{{item}}" url='/pages/money_info/money_info?card_id={{item.id}}'>
+            <i-card title="{{item.real_name}}" thumb="/images/001.png">
+                <view slot="content">
+                    <text wx:if="{{item.id_type=='1'}}">身份证：{{item.id_card}}</text>
+                    <text wx:if="{{item.id_type=='2'}}">港澳居民身份证：{{item.id_card}}</text>
+                    <text wx:if="{{item.id_type=='3'}}">台湾居民身份证：{{item.id_card}}</text>
+                    <text wx:if="{{item.id_type=='4'}}">军官证：{{item.id_card}}</text>
+                </view>
+                <view slot="footer">曙光医院</view>
+            </i-card>
+            <wux-white-space size="default" />
+            <wux-white-space size="large" />
+        </navigator>
+        <!-- <form bindsubmit="formSubmit">
+            <wux-radio-group name="visit_card_id" value="{{ visit_card_radio}}" bind:change="radio_change">
+                <block wx:for="{{visit_card_list}}" wx:key="{{item}}">
+                    <wux-radio wx:if="{{item.id_type=='1'}}" label="身份证：{{item.id_card}}" title="{{item.real_name}}" value="{{item.id}}" />
+                    <wux-radio wx:if="{{item.id_type=='2'}}" label="港澳居民身份证：{{item.id_card}}" title="{{item.real_name}}" value="{{item.id}}" />
+                    <wux-radio wx:if="{{item.id_type=='3'}}" label="台湾居民身份证：{{item.id_card}}" title="{{item.real_name}}" value="{{item.id}}" />
+                    <wux-radio wx:if="{{item.id_type=='4'}}" label="军官证：{{item.id_card}}" title="{{item.real_name}}" value="{{item.id}}" />
+                </block>
+            </wux-radio-group>
+            <wux-row wux-class="btn_group">
+                <button class='card_btn' formType="submit">确认</button>
+            </wux-row>
+        </form> -->
+
+    </block>
+</wux-wing-blank>

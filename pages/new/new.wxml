@@ -1,0 +1,16 @@
+<!--pages/new/new.wxml-->
+<view class='content'>
+  <view class='titimg'>
+    <image src='/images/05.jpg'></image>
+  </view>
+  <view class='text'>
+    <view class='title'>{{title}}
+    </view>
+    <view class='pop'>
+      <text>{{content}}
+     </text>
+    </view>
+  </view>
+
+
+</view>

@@ -1,0 +1,24 @@
+{
+    "navigationBarTitleText": "预约挂号",
+    "usingComponents": {
+        "wux-search-bar": "/wudist/search-bar/index",
+        "wux-steps": "/wudist/steps/index",
+        "wux-step": "/wudist/step/index",
+        "i-panel": "/dist/panel/index",
+        "wux-cell-group": "/wudist/cell-group/index",
+        "wux-cell": "/wudist/cell/index",
+        "i-load-more": "/dist/load-more/index",
+        "wux-calendar": "/wudist/calendar/index",
+        "wux-row": "/wudist/row/index",
+        "wux-col": "/wudist/col/index",
+        "wux-image": "/wudist/image/index",
+        "wux-button": "/wudist/button/index",
+        "wux-toast": "/wudist/toast/index",
+        "wux-radio-group": "/wudist/radio-group/index",
+        "wux-radio": "/wudist/radio/index",
+        "wux-avatar": "/wudist/avatar/index",
+        "wux-wing-blank": "/wudist/wing-blank/index",
+        "wux-white-space": "/wudist/white-space/index",
+        "i-card": "/dist/card/index"
+    }
+}

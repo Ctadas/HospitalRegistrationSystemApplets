@@ -1,0 +1,13 @@
+/* pages/report_info/report_info.wxss */
+.card_info {
+    color: #ad884f7e;
+}
+
+.card_data {
+    color: black;
+    float: right;
+}
+
+.tip_text{
+    text-align: center
+}

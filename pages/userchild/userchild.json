@@ -1,0 +1,12 @@
+{
+  
+    "usingComponents": {
+      "wux-barcode": "/wudist/barcode/index",
+      "wux-cell-group": "/wudist/cell-group/index",
+      "wux-cell": "/wudist/cell/index",
+      "wux-icon": "/wudist/icon/index",
+      "wux-button": "/wudist/button/index",
+      "wux-toast": "/wudist/toast/index"
+    }
+  
+}

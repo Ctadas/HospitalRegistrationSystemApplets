@@ -1,0 +1,50 @@
+<!--pages/registered_record_info/registered_record_info.wxml-->
+<block wx:if="{{registered_record_list.length >0}}">
+<wux-wing-blank size="default" wx:for="{{registered_record_list}}" wx:key="{{item}}">
+    <wux-white-space size="default" />
+    <i-card title="{{item.visit_card_obj.real_name}}" extra="{{submission_time}}" thumb="/images/pen.png">
+        <view slot="content">
+            <wux-row>
+                <wux-col span="12">
+                    <text class='card_info'>就诊科室：</text>
+                    <text class='card_data'>{{item.department}}</text>
+                </wux-col>
+                <wux-col span="12">
+                    <text class='card_info'>就诊医生：</text>
+                    <text class='card_data'>{{item.doctors_obj.name}}({{item.doctors_obj.job_title}})</text>
+                </wux-col>
+                <wux-col span="12">
+                    <text class='card_info'>就诊时间：</text>
+                    <text class='card_data'>{{item.registered_date}}</text>
+                </wux-col>
+            </wux-row>
+        </view>
+        <view slot="footer">编号：{{item.id}}</view>
+    </i-card>
+
+    <!-- <wux-card title="{{item.visit_card_obj.real_name}}" extra="{{submission_time}}">
+        <view slot="body">
+            <wux-row>
+                <wux-col span="12">
+                    <text class='card_info'>就诊科室：</text>
+                    <text class='card_data'>{{item.department}}</text>
+                </wux-col>
+                <wux-col span="12">
+                    <text class='card_info'>就诊医生：</text>
+                    <text class='card_data'>{{item.doctors_obj.name}}({{item.doctors_obj.job_title}})</text>
+                </wux-col>
+                <wux-col span="12">
+                    <text class='card_info'>就诊时间：</text>
+                    <text class='card_data'>{{item.registered_date}}</text>
+                </wux-col>
+            </wux-row>
+        </view>
+        <view class="" slot="footer">编号：{{item.id}}</view>
+    </wux-card> -->
+</wux-wing-blank>
+</block>
+<block wx:else>
+    <wux-row wux-class="tip_text">
+        <text>暂无报告信息</text>
+    </wux-row>
+</block>

@@ -1,0 +1,9 @@
+<!--pages/login/login.wxml-->
+    
+<view class='body'>
+    <text class='info_text'>
+    由于业务需求需要您授权登录，以便我们为你提供更好服务，请点击下方按钮确认授权！！
+    </text>
+    <button class="btn" open-type="getUserInfo" bindgetuserinfo="bindGetUserInfo">确认授权</button>
+    <button class="back_btn" bindtap="back" >返回</button>
+</view>

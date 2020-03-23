@@ -1,0 +1,13 @@
+.i-collapse-item{padding:2px 8px;border-top:1px solid #dddee1;
+  color: #1c2438;
+  width: 92%;
+  font-family: 微软雅黑;
+  background-color: #fff;
+  margin: 15rpx auto;
+  line-height: 80rpx;
+  border-radius:15rpx;
+  box-shadow: 5rpx 5rpx 5rpx #e9eaec;
+  
+
+}
+.i-collapse-item-title{vertical-align:middle}.i-collapse-item-title-wrap{padding:2px 0 0}.i-collapse-item-content{padding:10px;display:none;background-color: #f8f8f9;}.i-collapse-item-show-content{display:block}.i-collapse-item-arrow{transition:transform .2s ease-in-out}.i-collapse-item-arrow-show{transition:transform .2s ease-in-out;transform:rotate(90deg)}

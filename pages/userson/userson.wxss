@@ -1,0 +1,60 @@
+/* pages/userson/userson.wxss */
+page{
+    font-family: 微软雅黑
+}
+.userinfo_row {
+    text-align: center;
+    position: absolute;
+    z-index: 5;
+    width: 100%;
+    top: 5%;
+}
+.background_img{
+    width: 100%;
+}
+.avatar_img {
+    width: 72px;
+    height: 72px;
+    border-radius: 100%;
+}
+page{
+    background: #f8f8f9;
+}
+.card_info_list{
+    padding: 0 10px;
+    color:#f5ac42
+}
+.card {
+    padding: 10px;
+    margin: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5%;
+    background-color: white;
+    position: relative;
+    font-size: 32rpx
+}
+
+.card_line {
+    padding: 5px;
+}
+
+.card_info {
+    color: #f5ac42;
+}
+
+.card_data {
+    color: black;
+    float: right;
+}
+
+.card_img {
+    width: 100px;
+    height: 100px;
+    opacity: 0.3;
+    position: absolute;
+    right: 10px;
+}
+
+.button_group{
+    text-align: center;
+}
